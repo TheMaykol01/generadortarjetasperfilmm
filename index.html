@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Perfil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="contenedor-tarjeta">
+      <div class="image">
+        <img src="tarjetaPlantilla.webp" alt="">
+        <span id="nombre-preview" class="card-text card-nombre-text">NOMBRE</span>
+        <span id="cargo-preview" class="card-text card-cargo-text">CARGO</span>
+        <span id="color-preview" class="card-text card-color-text">COLOR</span>
+      </div>
+    </div>
+
+    <form id="formulario">
+      <div class="inputbox">
+        <label for="nombre-input">Nombre</label>
+        <input type="text" id="nombre-input" maxlength="30" placeholder="Escribe tu nombre">
+      </div>
+      <div class="inputbox">
+        <label for="cargo-input">Cargo</label>
+        <input type="text" id="cargo-input" maxlength="30" placeholder="Escribe tu cargo">
+      </div>
+      <div class="inputbox">
+        <label for="color-input">Color Favorito</label>
+        <select id="color-input">
+          <option value="" disabled selected>Seleccionar</option>
+          <option value="azul">Azul</option>
+          <option value="verde">Verde</option>
+          <option value="rojo">Rojo</option>
+          <option value="amarillo">Amarillo</option>
+          <option value="morado">Morado</option>
+          <option value="naranja">Naranja</option>
+          <option value="rosa">Rosa</option>
+          <option value="negro">Negro</option>
+          <option value="blanco">Blanco</option>
+        </select>
+      </div>
+      <button type="submit" class="submit-btn">Generar</button>
+    </form>
+
+    <div id="resultado" class="resultado" style="display: none;">
+      <h2>Resultado Final</h2>
+      <div class="resultado-tarjeta">
+        <div class="image">
+          <img src="tarjetaPlantilla.webp" alt="">
+          <span id="resultado-nombre" class="card-text card-nombre-text"></span>
+          <span id="resultado-cargo" class="card-text card-cargo-text"></span>
+          <span id="resultado-color" class="card-text card-color-text"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="script/main.js"></script>
+</body>
+
+</html>
